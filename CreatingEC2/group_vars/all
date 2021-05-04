@@ -1,6 +1,6 @@
-region: us-east-1
-instance_type: t2.nano
-ami: ami-0dba2cb6798deb6d8  # Ubuntu 20.04 LTS
+region: eu-central-1
+instance_type: t2.micro
+ami: 	ami-05f7491af5eef733a  # Ubuntu 20.04 LTS
 project_name: testing
 env: staging
 app_code_user: "ubuntu" # remote user
