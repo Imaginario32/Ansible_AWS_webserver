@@ -53,7 +53,7 @@
 
 - name: Install HTTPD 
     package:
-       name:  httpd
+        name: httpd
        state: present
     register: httpd_install
 
@@ -79,9 +79,9 @@ handlers:
       ec2_elb_lb:
         name: aws-elb-demo
         state: present
-        region: us-east-1
+        region: eu-central-1
         zones:
-          - us-east-1a
+          - eu-centrala
         listeners:
           - protocol: http
             load_balancer_port: 80
@@ -94,5 +94,5 @@ handlers:
         instance_id: "{{ item.id }}"
         ec2_elbs: aws-elb-demo
         state: present
-        region: us-east-1
+        region: eu-central
       with_items: ec2.tagged_instances
