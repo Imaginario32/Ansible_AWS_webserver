@@ -54,7 +54,7 @@
 - name: Install HTTPD 
     package:
         name: httpd
-       state: present
+       state: latest
     register: httpd_install
 
 - name: Copy conf file         
