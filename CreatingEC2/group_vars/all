@@ -1,8 +1,0 @@
-region: eu-central-1
-instance_type: t2.micro
-ami: 	ami-05f7491af5eef733a  # Ubuntu 20.04 LTS
-project_name: testing
-env: staging
-app_code_user: "ubuntu" # remote user
-hoststring: "ansible_ssh_user=ubuntu ansible_ssh_private_key_file=../aws-private.pem"
-hostpath: "../hosts"
