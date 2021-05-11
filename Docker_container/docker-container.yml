@@ -1,4 +1,6 @@
-- hosts: localhost
+---
+
+- hosts: webserver
   become: true  
   vars:
   - dockerfile_folder: "Dockerfile"
