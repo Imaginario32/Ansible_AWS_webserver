@@ -23,6 +23,8 @@ $ ansible-playbook site.yml  --private-key /home/k/.ssh/my_private_key.pem
 
 Where the "my_private_key.pem" is my private key.
 
+After deploing EC2, you need to specify the address in the "hosts" file
+
 Then you need to run playbook files from directory Docker_container: 
 
 $ ansible-playbook docker-configure.yml
